@@ -1,3 +1,3 @@
-import os
+import sys
 
-print("Hello python!")
+print(sys.argv)
