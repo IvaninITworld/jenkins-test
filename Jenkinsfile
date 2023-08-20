@@ -1,10 +1,10 @@
 pipeline {
-    agent any
+    agent { docker "python:3.10" }
     stages {
-        stage("ls") {
+        stage("run") {
             steps {
-                echo 'ls -alh'
-                sh 'ls -alh'
+                echo 'run python'
+                sh 'python hello.py'
             }
         }
     }
